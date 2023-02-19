@@ -30,7 +30,7 @@ def main():
     text = ""
     choice = input()
     if (choice=="I"):
-        text = input()
+        text = str(input())
     if (choice=="F"):
         text = open("test\\"+str(input()),"r").read()
     mismatch = find_mismatch(text)
