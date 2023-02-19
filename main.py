@@ -29,10 +29,10 @@ def find_mismatch(text):
 def main():
     text = ""
     choice = input()
-    if (choice=="I"):
-        text = str(input())
     if (choice=="F"):
         text = open("test\\"+str(input()),"r").read()
+    else:
+        text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     if (mismatch == 0):
