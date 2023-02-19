@@ -27,7 +27,11 @@ def find_mismatch(text):
 
 
 def main():
-    text = open("test\\"+str(input()),"r").read()
+    choice = input()
+    if (choice=="I"):
+        text = input()
+    if (choice=="F"):
+        text = open("test\\"+str(input()),"r").read()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
     if (mismatch == 0):
